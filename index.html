@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Typing Speed is a lightweight typing test platform designed to help users measure and improve their typing speed, accuracy, and consistency.">
+  <title>Typing Speed — Measure. Practice. Improve.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Clearly visible premium side decorations — speed / technology theme, background only -->
+  <div class="side-decor side-left" aria-hidden="true">
+    <svg class="side-svg" viewBox="0 0 260 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <!-- Large abstract circles — layered, 12-18% opacity -->
+      <circle cx="28" cy="145" r="88" stroke="#0f172a" stroke-opacity="0.14" stroke-width="1.2" fill="none"/>
+      <circle cx="28" cy="145" r="64" stroke="#0f172a" stroke-opacity="0.09" stroke-width="1" fill="none"/>
+      <circle cx="52" cy="168" r="34" stroke="#3b82f6" stroke-opacity="0.16" stroke-width="1.2" fill="none"/>
+      <circle cx="118" cy="535" r="108" stroke="#0f172a" stroke-opacity="0.11" stroke-width="1.2" fill="none"/>
+      <circle cx="118" cy="535" r="78" stroke="#0f172a" stroke-opacity="0.07" stroke-width="1" fill="none"/>
+      <circle cx="72" cy="758" r="62" stroke="#0f172a" stroke-opacity="0.13" stroke-width="1" fill="none"/>
+      <circle cx="72" cy="758" r="38" stroke="#3b82f6" stroke-opacity="0.12" stroke-width="1" fill="none"/>
+      <!-- Curved speed lines — layered thin lines, 20-32% opacity -->
+      <path d="M 14 215 C 64 215, 96 215, 196 215" stroke="#0f172a" stroke-opacity="0.28" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <path d="M 22 232 C 68 232, 92 232, 168 232" stroke="#0f172a" stroke-opacity="0.19" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <path d="M 10 249 C 52 249, 78 249, 132 249" stroke="#3b82f6" stroke-opacity="0.22" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <path d="M 18 605 C 72 605, 112 605, 214 605" stroke="#0f172a" stroke-opacity="0.26" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <path d="M 26 622 C 70 622, 102 622, 172 622" stroke="#0f172a" stroke-opacity="0.18" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <path d="M 12 639 C 48 639, 76 639, 124 639" stroke="#3b82f6" stroke-opacity="0.20" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <!-- Accent speed trails — subtle blue -->
+      <path d="M 36 272 C 78 272, 102 272, 152 268" stroke="#3b82f6" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round" fill="none"/>
+      <path d="M 40 662 C 84 662, 108 662, 162 658" stroke="#3b82f6" stroke-opacity="0.13" stroke-width="1" stroke-linecap="round" fill="none"/>
+      <!-- Minimal road center line — dashed, more visible -->
+      <line x1="96" y1="268" x2="96" y2="492" stroke="#0f172a" stroke-opacity="0.16" stroke-width="1.2" stroke-dasharray="10 10" stroke-linecap="round"/>
+      <circle cx="96" cy="258" r="2.2" fill="#3b82f6" fill-opacity="0.28"/>
+      <circle cx="96" cy="502" r="2.2" fill="#3b82f6" fill-opacity="0.28"/>
+      <!-- Subtle grid dots — 12% opacity -->
+      <g fill="#0f172a" fill-opacity="0.11">
+        <circle cx="34" cy="328" r="1.6"/><circle cx="58" cy="328" r="1.6"/><circle cx="82" cy="328" r="1.6"/><circle cx="106" cy="328" r="1.6"/><circle cx="130" cy="328" r="1.6"/>
+        <circle cx="34" cy="352" r="1.6"/><circle cx="58" cy="352" r="1.6"/><circle cx="82" cy="352" r="1.6"/><circle cx="106" cy="352" r="1.6"/><circle cx="130" cy="352" r="1.6"/>
+        <circle cx="34" cy="376" r="1.6"/><circle cx="58" cy="376" r="1.6"/><circle cx="82" cy="376" r="1.6"/><circle cx="106" cy="376" r="1.6"/><circle cx="130" cy="376" r="1.6"/>
+        <circle cx="34" cy="688" r="1.6"/><circle cx="58" cy="688" r="1.6"/><circle cx="82" cy="688" r="1.6"/><circle cx="106" cy="688" r="1.6"/><circle cx="130" cy="688" r="1.6"/>
+        <circle cx="34" cy="712" r="1.6"/><circle cx="58" cy="712" r="1.6"/><circle cx="82" cy="712" r="1.6"/><circle cx="106" cy="712" r="1.6"/><circle cx="130" cy="712" r="1.6"/>
+      </g>
+      <!-- Keyboard-inspired mini keys — faint -->
+      <g fill="none" stroke="#0f172a" stroke-opacity="0.10" stroke-width="0.9" rx="2">
+        <rect x="28" y="395" width="18" height="14" rx="2"/><rect x="50" y="395" width="18" height="14" rx="2"/><rect x="72" y="395" width="18" height="14" rx="2"/><rect x="94" y="395" width="22" height="14" rx="2"/>
+        <rect x="32" y="413" width="18" height="14" rx="2"/><rect x="54" y="413" width="26" height="14" rx="2"/><rect x="84" y="413" width="18" height="14" rx="2"/>
+      </g>
+      <!-- Vertical thin accent line -->
+      <line x1="96" y1="78" x2="96" y2="198" stroke="#0f172a" stroke-opacity="0.13" stroke-width="1"/>
+      <line x1="96" y1="512" x2="96" y2="592" stroke="#0f172a" stroke-opacity="0.13" stroke-width="1"/>
+      <!-- Faint typography — more visible but still elegant -->
+      <text x="22" y="475" fill="#0f172a" fill-opacity="0.09" font-family="Inter, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.04em" transform="rotate(-90 22 475)">SPEED</text>
+      <text x="22" y="495" fill="#3b82f6" fill-opacity="0.07" font-family="JetBrains Mono, monospace" font-size="10" font-weight="500" letter-spacing="0.18em" transform="rotate(-90 22 495)">T Y P I N G</text>
+      <!-- Geometric accent — small diamond -->
+      <rect x="88" y="212" width="16" height="16" rx="1.5" transform="rotate(45 96 220)" fill="none" stroke="#3b82f6" stroke-opacity="0.18" stroke-width="1"/>
+      <rect x="88" y="602" width="16" height="16" rx="1.5" transform="rotate(45 96 610)" fill="none" stroke="#0f172a" stroke-opacity="0.14" stroke-width="1"/>
+    </svg>
+  </div>
+  <div class="side-decor side-right" aria-hidden="true">
+    <svg class="side-svg" viewBox="0 0 260 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <!-- Large abstract circles — different layout than left for variety -->
+      <circle cx="232" cy="172" r="88" stroke="#0f172a" stroke-opacity="0.14" stroke-width="1.2" fill="none"/>
+      <circle cx="232" cy="172" r="64" stroke="#0f172a" stroke-opacity="0.09" stroke-width="1" fill="none"/>
+      <circle cx="208" cy="195" r="34" stroke="#3b82f6" stroke-opacity="0.16" stroke-width="1.2" fill="none"/>
+      <circle cx="142" cy="575" r="108" stroke="#0f172a" stroke-opacity="0.11" stroke-width="1.2" fill="none"/>
+      <circle cx="142" cy="575" r="78" stroke="#0f172a" stroke-opacity="0.07" stroke-width="1" fill="none"/>
+      <circle cx="188" cy="798" r="62" stroke="#0f172a" stroke-opacity="0.13" stroke-width="1" fill="none"/>
+      <circle cx="188" cy="798" r="38" stroke="#3b82f6" stroke-opacity="0.12" stroke-width="1" fill="none"/>
+      <!-- Curved speed lines — opposite curvature for balance -->
+      <path d="M 64 252 C 144 252, 176 252, 246 252" stroke="#0f172a" stroke-opacity="0.28" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <path d="M 92 269 C 138 269, 168 269, 238 269" stroke="#0f172a" stroke-opacity="0.19" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <path d="M 128 286 C 172 286, 198 286, 250 286" stroke="#3b82f6" stroke-opacity="0.22" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <path d="M 46 645 C 118 645, 158 645, 242 645" stroke="#0f172a" stroke-opacity="0.26" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <path d="M 88 662 C 132 662, 162 662, 234 662" stroke="#0f172a" stroke-opacity="0.18" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <path d="M 136 679 C 172 679, 200 679, 248 679" stroke="#3b82f6" stroke-opacity="0.20" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <path d="M 108 308 C 150 308, 174 312, 224 318" stroke="#3b82f6" stroke-opacity="0.14" stroke-width="1" stroke-linecap="round" fill="none"/>
+      <path d="M 98 702 C 142 698, 166 698, 222 694" stroke="#3b82f6" stroke-opacity="0.13" stroke-width="1" stroke-linecap="round" fill="none"/>
+      <!-- Road center line — different height for asymmetry -->
+      <line x1="164" y1="308" x2="164" y2="532" stroke="#0f172a" stroke-opacity="0.16" stroke-width="1.2" stroke-dasharray="10 10" stroke-linecap="round"/>
+      <circle cx="164" cy="298" r="2.2" fill="#3b82f6" fill-opacity="0.28"/>
+      <circle cx="164" cy="542" r="2.2" fill="#3b82f6" fill-opacity="0.28"/>
+      <!-- Grid dots — shifted -->
+      <g fill="#0f172a" fill-opacity="0.11">
+        <circle cx="130" cy="358" r="1.6"/><circle cx="154" cy="358" r="1.6"/><circle cx="178" cy="358" r="1.6"/><circle cx="202" cy="358" r="1.6"/><circle cx="226" cy="358" r="1.6"/>
+        <circle cx="130" cy="382" r="1.6"/><circle cx="154" cy="382" r="1.6"/><circle cx="178" cy="382" r="1.6"/><circle cx="202" cy="382" r="1.6"/><circle cx="226" cy="382" r="1.6"/>
+        <circle cx="130" cy="406" r="1.6"/><circle cx="154" cy="406" r="1.6"/><circle cx="178" cy="406" r="1.6"/><circle cx="202" cy="406" r="1.6"/><circle cx="226" cy="406" r="1.6"/>
+        <circle cx="130" cy="718" r="1.6"/><circle cx="154" cy="718" r="1.6"/><circle cx="178" cy="718" r="1.6"/><circle cx="202" cy="718" r="1.6"/><circle cx="226" cy="718" r="1.6"/>
+        <circle cx="130" cy="742" r="1.6"/><circle cx="154" cy="742" r="1.6"/><circle cx="178" cy="742" r="1.6"/><circle cx="202" cy="742" r="1.6"/><circle cx="226" cy="742" r="1.6"/>
+      </g>
+      <!-- Keyboard-inspired — different arrangement -->
+      <g fill="none" stroke="#0f172a" stroke-opacity="0.10" stroke-width="0.9">
+        <rect x="148" y="425" width="18" height="14" rx="2"/><rect x="170" y="425" width="22" height="14" rx="2"/><rect x="196" y="425" width="18" height="14" rx="2"/><rect x="218" y="425" width="14" height="14" rx="2"/>
+        <rect x="152" y="443" width="22" height="14" rx="2"/><rect x="178" y="443" width="18" height="14" rx="2"/><rect x="200" y="443" width="22" height="14" rx="2"/>
+      </g>
+      <line x1="164" y1="108" x2="164" y2="228" stroke="#0f172a" stroke-opacity="0.13" stroke-width="1"/>
+      <line x1="164" y1="552" x2="164" y2="632" stroke="#0f172a" stroke-opacity="0.13" stroke-width="1"/>
+      <text x="238" y="515" fill="#0f172a" fill-opacity="0.09" font-family="Inter, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.04em" transform="rotate(90 238 515)">SPEED</text>
+      <text x="252" y="535" fill="#3b82f6" fill-opacity="0.07" font-family="JetBrains Mono, monospace" font-size="10" font-weight="500" letter-spacing="0.18em" transform="rotate(90 252 535)">T Y P I N G</text>
+      <rect x="156" y="249" width="16" height="16" rx="1.5" transform="rotate(45 164 257)" fill="none" stroke="#3b82f6" stroke-opacity="0.18" stroke-width="1"/>
+      <rect x="156" y="642" width="16" height="16" rx="1.5" transform="rotate(45 164 650)" fill="none" stroke="#0f172a" stroke-opacity="0.14" stroke-width="1"/>
+    </svg>
+  </div>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Typing Speed home">
+        <span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="7" fill="#111827"/><path d="M8 10.5H12.2L10.9 17H12.7L14 10.5H18.2L18.6 9H8.4L8 10.5Z" fill="white"/><path d="M13.2 18.2L12.6 20.2H14.1L16.2 12H14.7L13.2 18.2Z" fill="white" opacity="0.7"/></svg></span>
+        <span class="logo-text">Typing Speed</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#test" class="nav-link" data-nav="test">Test</a>
+        <a href="#levels" class="nav-link" data-nav="levels">Levels</a>
+        <a href="#leaderboard" class="nav-link" data-nav="leaderboard">Leaderboard</a>
+        <a href="#about" class="nav-link" data-nav="about">About</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#test" class="mobile-nav-link">Test</a>
+      <a href="#levels" class="mobile-nav-link">Levels</a>
+      <a href="#leaderboard" class="mobile-nav-link">Leaderboard</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Professional typing assessment</p>
+          <h1 class="hero-title">Test your typing<br>speed.</h1>
+          <p class="hero-subtitle">Measure your typing speed, accuracy, and consistency.<br>Refine your technique with precision feedback.</p>
+          <div class="hero-actions">
+            <a href="#test" class="btn btn-primary" id="heroStartBtn">Start Test</a>
+            <a href="#levels" class="btn btn-secondary">View Levels</a>
+          </div>
+        </div>
+        <div class="hero-stats" aria-label="Your statistics">
+          <div class="stat-card">
+            <span class="stat-value" id="heroAvgWpm">—</span>
+            <span class="stat-label">Average WPM</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="heroBestWpm">—</span>
+            <span class="stat-label">Best WPM</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="heroAvgAcc">—</span>
+            <span class="stat-label">Accuracy</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="heroTests">0</span>
+            <span class="stat-label">Tests completed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typing Test Section -->
+    <section class="section test-section" id="test" aria-labelledby="test-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="test-heading" class="section-title">Typing Test</h2>
+          <p class="section-subtitle">Select your level and duration, then press Start Test. The passage appears immediately — timer starts only on your first keystroke.</p>
+        </div>
+
+        <!-- Controls -->
+        <div class="test-controls" id="testControls">
+          <div class="control-group">
+            <span class="control-label" id="modeLabel">Mode</span>
+            <div class="segmented" role="group" aria-labelledby="modeLabel">
+              <button class="seg-btn active" data-mode="timed" aria-pressed="true">Timed</button>
+              <button class="seg-btn" data-mode="passage" aria-pressed="false">Passage</button>
+            </div>
+          </div>
+          <div class="control-group" id="timeGroup">
+            <span class="control-label" id="timeLabel">Duration</span>
+            <div class="segmented" role="group" aria-labelledby="timeLabel">
+              <button class="seg-btn" data-time="30" aria-pressed="false">30s</button>
+              <button class="seg-btn active" data-time="60" aria-pressed="true">60s</button>
+              <button class="seg-btn" data-time="120" aria-pressed="false">120s</button>
+              <button class="seg-btn" data-time="180" aria-pressed="false">180s</button>
+              <button class="seg-btn" data-time="300" aria-pressed="false">300s</button>
+              <button class="seg-btn" data-time="900" aria-pressed="false">900s</button>
+            </div>
+          </div>
+          <div class="control-group">
+            <span class="control-label" id="levelLabel">Level</span>
+            <div class="segmented" role="group" aria-labelledby="levelLabel">
+              <button class="seg-btn active" data-level="level1" aria-pressed="true">1</button>
+              <button class="seg-btn" data-level="level2" aria-pressed="false">2</button>
+              <button class="seg-btn" data-level="level3" aria-pressed="false">3</button>
+              <button class="seg-btn" data-level="level4" aria-pressed="false">4</button>
+              <button class="seg-btn" data-level="level5" aria-pressed="false">5</button>
+            </div>
+          </div>
+          <div class="control-group control-start">
+            <span class="control-label">&nbsp;</span>
+            <div class="control-start-row">
+              <button class="btn btn-primary" id="startTestBtn">Start Test</button>
+              <button class="btn btn-ghost btn-sm" id="newParagraphBtn" aria-label="Load new passage">New passage</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Passage meta (appears after Start Test, before typing) -->
+        <div class="passage-meta" id="passageMeta" hidden>
+          <div class="passage-meta-top">
+            <span class="passage-level" id="metaLevel">LEVEL 1 — BEGINNER</span>
+            <span class="dot" aria-hidden="true">·</span>
+            <span class="passage-category" id="metaCategory">Nature</span>
+            <span class="passage-source" id="metaSource"></span>
+          </div>
+          <h3 class="passage-title" id="metaTitle">Passage title</h3>
+          <p class="passage-author" id="metaAuthor"></p>
+        </div>
+
+        <!-- Car progress rail -->
+        <div class="car-rail" id="carRail" aria-hidden="true">
+          <div class="car-rail-header">
+            <span class="car-rail-label" id="carRailLabel">Level 1 — cruising</span>
+            <span class="car-rail-percent" id="carRailPercent">0%</span>
+          </div>
+          <div class="car-rail-track">
+            <div class="car-rail-progress" id="railProgress" style="width:0%"></div>
+            <div class="car-rail-car" id="railCar" style="left:0%">
+              <!-- Minimal premium car silhouette -->
+              <svg width="34" height="14" viewBox="0 0 34 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M2.5 9.5H4.8L6.2 5.5H9.5L12.2 3.2H22.8L26.5 5.5H30.2C31.2 5.5 32 6.3 32 7.3V9.5H31" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 9.5H32" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                <circle cx="8.5" cy="10.8" r="2.2" fill="currentColor"/>
+                <circle cx="25.5" cy="10.8" r="2.2" fill="currentColor"/>
+                <circle cx="8.5" cy="10.8" r="0.9" fill="white"/>
+                <circle cx="25.5" cy="10.8" r="0.9" fill="white"/>
+                <path d="M12.2 3.2L14.5 5.5H22.5L20.2 3.2H12.2Z" fill="currentColor" opacity="0.14"/>
+              </svg>
+            </div>
+          </div>
+          <div class="car-rail-markers"><span>Start</span><span>Finish</span></div>
+        </div>
+
+        <!-- Live metrics -->
+        <div class="metrics" aria-live="polite" aria-label="Live test metrics">
+          <div class="metric">
+            <span class="metric-value" id="metricTime">60</span>
+            <span class="metric-label" id="metricTimeLabel">seconds</span>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric">
+            <span class="metric-value" id="metricWpm">0</span>
+            <span class="metric-label">WPM</span>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric">
+            <span class="metric-value" id="metricAcc">100<span class="metric-unit">%</span></span>
+            <span class="metric-label">accuracy</span>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric">
+            <span class="metric-value" id="metricErrors">0</span>
+            <span class="metric-label">errors</span>
+          </div>
+        </div>
+
+        <!-- Typing Area -->
+        <div class="typing-wrapper" id="typingWrapper" tabindex="0" role="textbox" aria-label="Typing area. Click or press any key to start." aria-multiline="true">
+          <div class="typing-idle" id="typingIdle">
+            <p>Choose your level and duration, then press <strong>Start Test</strong>. Your passage will appear instantly for you to read before typing.</p>
+            <button class="btn btn-primary" id="idleStartBtn">Start Test</button>
+          </div>
+          <div class="typing-hint" id="typingHint" hidden>
+            <span>Click here or start typing — timer starts on first keystroke</span>
+            <span class="hint-kbd">Press <kbd>Tab</kbd> + <kbd>Enter</kbd> to restart</span>
+          </div>
+          <div class="typing-text" id="typingText" aria-hidden="true"></div>
+          <textarea id="hiddenInput" class="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Type the displayed text here"></textarea>
+        </div>
+
+        <div class="test-actions">
+          <button class="btn btn-secondary btn-sm" id="restartBtn" aria-label="Restart test">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 8A5.5 5.5 0 1 1 8 2.5"/><path d="M13.5 2.5v5.5H8"/></svg>
+            Restart
+          </button>
+          <span class="test-tip">Tip: Press <kbd>Tab</kbd> then <kbd>Enter</kbd> to quickly restart</span>
+        </div>
+
+        <!-- Results -->
+        <div class="results" id="results" hidden>
+          <div class="results-header">
+            <p class="results-eyebrow">Test complete</p>
+            <h3 class="results-title sr-only">Your results</h3>
+            <div class="results-passage" id="resultsPassage" hidden>
+              <span class="results-passage-level" id="resLevel"></span>
+              <span class="dot" aria-hidden="true">·</span>
+              <span id="resCategory"></span>
+              <div class="results-passage-title" id="resTitle"></div>
+              <div class="results-passage-author" id="resAuthor"></div>
+            </div>
+          </div>
+          <div class="results-main">
+            <div class="results-hero">
+              <div class="result-big">
+                <span class="result-big-value" id="resWpm">0</span>
+                <span class="result-big-label">WPM</span>
+              </div>
+              <div class="result-big">
+                <span class="result-big-value" id="resAcc">0%</span>
+                <span class="result-big-label">Accuracy</span>
+              </div>
+            </div>
+            <div class="results-grid">
+              <div class="result-item">
+                <span class="result-value" id="resChars">0</span>
+                <span class="result-label">characters</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value" id="resCorrect">0</span>
+                <span class="result-label">correct</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value" id="resIncorrect">0</span>
+                <span class="result-label">incorrect</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value" id="resErrors">0</span>
+                <span class="result-label">errors</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value" id="resTime">0s</span>
+                <span class="result-label">time</span>
+              </div>
+              <div class="result-item">
+                <span class="result-value" id="resConsistency">—</span>
+                <span class="result-label">consistency</span>
+              </div>
+            </div>
+          </div>
+          <div class="results-actions">
+            <button class="btn btn-primary" id="tryAgainBtn">Try Again</button>
+            <button class="btn btn-secondary" id="newTestBtn">New Test</button>
+            <a href="#levels" class="btn btn-ghost" id="changeLevelBtn">Change Level</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Levels Section -->
+    <section class="section levels-section" id="levels" aria-labelledby="levels-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="levels-heading" class="section-title">Levels</h2>
+          <p class="section-subtitle">Choose any level. Each offers a curated passage library tailored to its difficulty — with speed increasing as you progress.</p>
+        </div>
+        <div class="levels-grid">
+          <article class="level-card" data-level="level1" tabindex="0" role="button" aria-label="Select Level 1 Beginner">
+            <div class="level-header">
+              <span class="level-number">01</span>
+              <span class="level-badge">Beginner</span>
+            </div>
+            <h3 class="level-name">Beginner</h3>
+            <p class="level-desc">Long passages (300–450 words) with simple vocabulary and easy grammar. Comfortable for building confidence.</p>
+            <div class="level-meta">
+              <span><strong>40</strong> passages</span>
+              <span class="dot" aria-hidden="true">·</span>
+              <span>Recommended &lt; 30 WPM</span>
+            </div>
+            <div class="level-speed" aria-hidden="true">
+              <span class="speed-label">cruising</span>
+              <div class="speed-rail"><div class="speed-fill" style="width:18%"></div><div class="speed-car" style="left:18%"></div></div>
+            </div>
+            <div class="level-best" id="levelBest1">No attempts yet</div>
+          </article>
+
+          <article class="level-card" data-level="level2" tabindex="0" role="button" aria-label="Select Level 2 Easy">
+            <div class="level-header">
+              <span class="level-number">02</span>
+              <span class="level-badge">Easy</span>
+            </div>
+            <h3 class="level-name">Easy</h3>
+            <p class="level-desc">Long passages (400–550 words) with common vocabulary and varied sentence structures.</p>
+            <div class="level-meta">
+              <span><strong>40</strong> passages</span>
+              <span class="dot" aria-hidden="true">·</span>
+              <span>Recommended 30–40 WPM</span>
+            </div>
+            <div class="level-speed" aria-hidden="true">
+              <span class="speed-label">steady</span>
+              <div class="speed-rail"><div class="speed-fill" style="width:38%"></div><div class="speed-car" style="left:38%"></div></div>
+            </div>
+            <div class="level-best" id="levelBest2">No attempts yet</div>
+          </article>
+
+          <article class="level-card" data-level="level3" tabindex="0" role="button" aria-label="Select Level 3 Intermediate">
+            <div class="level-header">
+              <span class="level-number">03</span>
+              <span class="level-badge">Intermediate</span>
+            </div>
+            <h3 class="level-name">Intermediate</h3>
+            <p class="level-desc">Long passages (500–650 words) with advanced vocabulary and more complex sentences.</p>
+            <div class="level-meta">
+              <span><strong>40</strong> passages</span>
+              <span class="dot" aria-hidden="true">·</span>
+              <span>Recommended 40–60 WPM</span>
+            </div>
+            <div class="level-speed" aria-hidden="true">
+              <span class="speed-label">moderate</span>
+              <div class="speed-rail"><div class="speed-fill" style="width:58%"></div><div class="speed-car" style="left:58%"></div></div>
+            </div>
+            <div class="level-best" id="levelBest3">No attempts yet</div>
+          </article>
+
+          <article class="level-card" data-level="level4" tabindex="0" role="button" aria-label="Select Level 4 Advanced">
+            <div class="level-header">
+              <span class="level-number">04</span>
+              <span class="level-badge">Advanced</span>
+            </div>
+            <h3 class="level-name">Advanced</h3>
+            <p class="level-desc">Very long passages (600–750 words) with advanced vocabulary and sophisticated ideas.</p>
+            <div class="level-meta">
+              <span><strong>40</strong> passages</span>
+              <span class="dot" aria-hidden="true">·</span>
+              <span>Recommended 60–80 WPM</span>
+            </div>
+            <div class="level-speed" aria-hidden="true">
+              <span class="speed-label">brisk</span>
+              <div class="speed-rail"><div class="speed-fill" style="width:78%"></div><div class="speed-car" style="left:78%"></div></div>
+            </div>
+            <div class="level-best" id="levelBest4">No attempts yet</div>
+          </article>
+
+          <article class="level-card" data-level="level5" tabindex="0" role="button" aria-label="Select Level 5 Expert">
+            <div class="level-header">
+              <span class="level-number">05</span>
+              <span class="level-badge badge-dark">Expert</span>
+            </div>
+            <h3 class="level-name">Expert</h3>
+            <p class="level-desc">Very long passages (700–900 words) with difficult vocabulary and dense, challenging prose.</p>
+            <div class="level-meta">
+              <span><strong>40</strong> passages</span>
+              <span class="dot" aria-hidden="true">·</span>
+              <span>Recommended 80+ WPM</span>
+            </div>
+            <div class="level-speed" aria-hidden="true">
+              <span class="speed-label">maximum</span>
+              <div class="speed-rail"><div class="speed-fill" style="width:96%"></div><div class="speed-car" style="left:96%"></div></div>
+            </div>
+            <div class="level-best" id="levelBest5">No attempts yet</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="section history-section" id="history" aria-labelledby="history-heading">
+      <div class="container">
+        <div class="section-header row-between">
+          <div>
+            <h2 id="history-heading" class="section-title">Recent tests</h2>
+            <p class="section-subtitle">Your last 20 results, stored locally on this device.</p>
+          </div>
+          <button class="btn btn-ghost btn-sm" id="clearHistoryBtn">Clear history</button>
+        </div>
+        <div class="table-wrapper">
+          <table class="data-table" id="historyTable" aria-label="Test history">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Level</th>
+                <th scope="col">Duration</th>
+                <th scope="col">WPM</th>
+                <th scope="col">Accuracy</th>
+                <th scope="col">Errors</th>
+              </tr>
+            </thead>
+            <tbody id="historyBody">
+              <tr><td colspan="6" class="empty">No tests yet. Complete a test to see your history.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="section leaderboard-section" id="leaderboard" aria-labelledby="leaderboard-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="leaderboard-heading" class="section-title">Leaderboard</h2>
+          <p class="section-subtitle">Demo leaderboard with sample data for illustration. Your personal best is highlighted below when available.</p>
+          <span class="demo-badge">Demo data — not real users</span>
+        </div>
+        <div class="table-wrapper">
+          <table class="data-table leaderboard-table" aria-label="Demo leaderboard">
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Name</th>
+                <th scope="col">WPM</th>
+                <th scope="col">Accuracy</th>
+                <th scope="col">Level</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboardBody"></tbody>
+          </table>
+        </div>
+        <div class="personal-best-callout" id="personalBestCallout" hidden>
+          <span class="callout-label">Your personal best</span>
+          <span class="callout-value" id="personalBestText">—</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container about-inner">
+        <div class="about-content">
+          <h2 id="about-heading" class="section-title">About Typing Speed</h2>
+          <p class="about-text">Typing Speed is a lightweight typing test platform designed to help users measure and improve their typing speed, accuracy, and consistency.</p>
+          <p class="about-text muted">Built with performance in mind, it runs entirely in your browser — no account, no backend, no tracking. Your results are stored locally on your device, so your data stays with you. Whether you are preparing for professional work, studying, or simply refining a daily skill, Typing Speed offers a focused, distraction-free environment to practice and progress.</p>
+          <ul class="about-list">
+            <li>200 long-form passages across five difficulty levels — 40 per level, 300–900 words each, including public-domain classics and original writing</li>
+            <li>Accurate WPM and accuracy calculations</li>
+            <li>Local personal best and test history</li>
+            <li>Lightweight, responsive, and accessible</li>
+          </ul>
+        </div>
+        <div class="about-card" aria-hidden="true">
+          <div class="about-card-inner">
+            <p class="about-quote">“Consistency beats intensity. Small, regular practice is the fastest path to lasting improvement.”</p>
+            <div class="about-stats-mini">
+              <div><strong>200</strong><span>passages</span></div>
+              <div><strong>5</strong><span>levels</span></div>
+              <div><strong>2</strong><span>modes</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Typing Speed</span>
+        <span class="footer-tagline">Measure. Practice. Improve.</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#test">Test</a>
+        <a href="#levels">Levels</a>
+        <a href="#about">About</a>
+      </nav>
+      <p class="footer-copy">© 2026 Typing Speed. Crafted for focused practice.</p>
+      <p class="footer-created">Created by Mohammed</p>
+    </div>
+  </footer>
+
+  <!-- Confirm dialog -->
+  <dialog id="confirmDialog" class="confirm-dialog" aria-labelledby="confirmTitle">
+    <form method="dialog">
+      <h3 id="confirmTitle">Clear history?</h3>
+      <p>This will permanently remove your local test history. This cannot be undone.</p>
+      <div class="dialog-actions">
+        <button value="cancel" class="btn btn-secondary btn-sm">Cancel</button>
+        <button value="confirm" class="btn btn-primary btn-sm" id="confirmClearBtn">Clear</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
